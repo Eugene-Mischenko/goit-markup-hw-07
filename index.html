@@ -21,8 +21,8 @@
     <header class="header">
       <div class="header-box container">
         <nav class="navigation">
-          <a class="logo link" href="./index.html"
-            >Web<span class="logo-color">Studio</span></a
+          <a class="logo general-logo link" href="./index.html"
+            >Web<span class="header-logo">Studio</span></a
           >
           <ul class="navigation-menu list">
             <li>
@@ -38,7 +38,6 @@
             <li><a class="navigation-link link" href="">Contacts</a></li>
           </ul>
         </nav>
-
         <button type="button" class="burger-mob-menu">
           <svg width="32" height="22" class="icon-burger js-open-menu">
             <use href="./images/icons.svg#burger"></use>
@@ -61,34 +60,38 @@
       </div>
       <div class="mob-menu-wrapp js-menu-container">
         <div class="container mob-menu-container">
-          <button
-            type="button"
-            class="modal-button-close mob-modal-button-close js-close-menu"
-          >
-            <svg width="8" height="8" class="icon-close">
-              <use href="./images/icons.svg#modal-close"></use>
-            </svg>
-          </button>
-          <nav class="mob-navigation">
-            <ul class="navigations-mobile-list list">
-              <li class="mob-navi-list">
-                <a href="./index.html" class="mob-menu-nav-link link active"
-                  >Studio</a
-                >
-              </li>
-              <li class="mob-navi-list">
-                <a href="./portfolio.html" class="mob-menu-nav-link link"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="mob-navi-list">
-                <a href="" class="mob-menu-nav-link link">Contacts</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="nav-btn-wrap">
+            <button
+              type="button"
+              class="modal-button-close mobile-button-close js-close-menu"
+            >
+              <svg width="8" height="8" class="modal-button">
+                <use href="./images/icons.svg#modal-close"></use>
+              </svg>
+            </button>
+            <nav class="mob-navigation">
+              <ul class="navigations-mobile-list list">
+                <li class="mob-navi-list">
+                  <a
+                    href="./index.html"
+                    class="mob-menu-nav-link link current-page"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mob-navi-list">
+                  <a href="./portfolio.html" class="mob-menu-nav-link link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-navi-list">
+                  <a href="" class="mob-menu-nav-link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div class="mobile-fixed-wrap">
             <address class="mob-address-list">
-              <ul class="list contacts-list">
+              <ul class="list address-menu">
                 <li class="contact-mobile">
                   <a
                     href="tel:+110001111111"
@@ -106,54 +109,54 @@
               </ul>
             </address>
             <ul class="footer-social-list mob-social-list list">
-              <li class="social-media-item">
+              <li class="footer-social-item">
                 <a
                   href=""
-                  class="icon-link"
+                  class="social-link"
                   aria-label="link to Instagram"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <svg class="icon-img" width="24" height="24">
+                  <svg class="soc-icon" width="24" height="24">
                     <use href="./images/icons.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-media-item">
+              <li class="footer-social-item">
                 <a
                   href=""
-                  class="icon-link"
+                  class="social-link"
                   aria-label="link to Twitter"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <svg class="icon-img" width="24" height="24">
+                  <svg class="soc-icon" width="24" height="24">
                     <use href="./images/icons.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-media-item">
+              <li class="footer-social-item">
                 <a
                   href=""
-                  class="icon-link"
+                  class="social-link"
                   aria-label="link to Facebook"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <svg class="icon-img" width="24" height="24">
+                  <svg class="soc-icon" width="24" height="24">
                     <use href="./images/icons.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-media-item">
+              <li class="footer-social-item">
                 <a
                   href=""
-                  class="icon-link"
+                  class="social-link"
                   aria-label="link to Linkedin"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <svg class="icon-img" width="24" height="24">
+                  <svg class="soc-icon" width="24" height="24">
                     <use href="./images/icons.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -167,11 +170,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
-          <button
-            class="hero-button hero-btn-mob"
-            type="button"
-            data-modal-open=""
-          >
+          <button class="hero-button button" type="button" data-modal-open="">
             Order Service
           </button>
         </div>
@@ -303,7 +302,7 @@
       </section>
       <section class="team">
         <div class="container team-container">
-          <h2 class="team-title">Our Team</h2>
+          <h2 class="work">Our Team</h2>
           <ul class="team-list list">
             <li class="team-member">
               <picture>
@@ -329,30 +328,30 @@
                 <h3 class="name-member">Mark Guerrero</h3>
                 <p class="profession-member">Product Designer</p>
                 <ul class="team-social list">
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -383,30 +382,30 @@
                 <h3 class="name-member">Tom Ford</h3>
                 <p class="profession-member">Frontend Developer</p>
                 <ul class="team-social list">
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -437,30 +436,30 @@
                 <h3 class="name-member">Camila Garcia</h3>
                 <p class="profession-member">Marketing</p>
                 <ul class="team-social list">
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -491,30 +490,30 @@
                 <h3 class="name-member">Daniel Wilson</h3>
                 <p class="profession-member">UI Designer</p>
                 <ul class="team-social list">
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-logo">
+                  <li class="team-logo">
                     <a class="social-link" href="">
-                      <svg class="logo-icon" width="16" height="16">
+                      <svg class="soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -526,8 +525,8 @@
         </div>
       </section>
       <section class="customers">
-        <div class="container">
-          <h2 class="customers-header">Customers</h2>
+        <div class="container customers-container">
+          <h2 class="work">Customers</h2>
           <ul class="customers-list list">
             <li class="customer-item">
               <a class="customer-link" href="">
@@ -578,8 +577,8 @@
     <footer class="footer">
       <div class="footer-info container">
         <div class="footer-logo-container">
-          <a class="footer-logo link" href="./index.html"
-            >Web<span class="logo-color-footer">Studio</span></a
+          <a class="logo general-logo footer-logo link" href="./index.html"
+            >Web<span class="footer-span">Studio</span></a
           >
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
@@ -590,34 +589,37 @@
           <p class="footer-social">Social media</p>
           <ul class="footer-social-list list">
             <li class="footer-social-item">
-              <a class="footer-social-link" href="">
-                <svg class="footer-social-logo" width="24" height="24">
+              <a class="social-link" href="">
+                <svg class="soc-icon" width="24" height="24">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link" href=""
-                ><svg class="footer-social-logo" width="24" height="24">
-                  <use href="./images/icons.svg#twitter"></use></svg
-              ></a>
+              <a class="social-link" href=""
+                ><svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link" href=""
-                ><svg class="footer-social-logo" width="24" height="24">
-                  <use href="./images/icons.svg#facebook"></use></svg
-              ></a>
+              <a class="social-link" href=""
+                ><svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link" href=""
-                ><svg class="footer-social-logo" width="24" height="24">
-                  <use href="./images/icons.svg#linkedin"></use></svg
-              ></a>
+              <a class="social-link" href=""
+                ><svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="subscribe-cont">
-          <p class="subscribe-par">Subscribe</p>
+          <p class="footer-social">Subscribe</p>
           <form class="subscribe-form">
             <label class="subscribe-lab">
               <input
@@ -627,7 +629,7 @@
                 class="subscribe-inpt"
               />
             </label>
-            <button type="submit" class="subscribe-btn">
+            <button type="submit" class="subscribe-btn button">
               Subscribe
               <svg width="24" height="24" class="sub-btn-icon">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -640,7 +642,11 @@
 
     <div data-modal class="modal is-hidden">
       <div class="modal-script">
-        <button type="button" class="modal-button-close" data-modal-close="">
+        <button
+          type="button"
+          class="modal-button-close modal-close-btn"
+          data-modal-close=""
+        >
           <svg class="modal-button" width="8" height="8">
             <use href="./images/icons.svg#modal-close"></use>
           </svg>
@@ -655,6 +661,8 @@
                 id="user-name"
                 name="user-name"
                 class="callback-name-input"
+                pattern="[a-zA-Z]+"
+                minlength="2"
               />
               <svg width="18" height="24" class="user-name-logo">
                 <use href="./images/icons.svg#user-name"></use>
@@ -669,6 +677,9 @@
                 id="user-phone"
                 name="user-phone"
                 class="callback-name-input"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="XXX-XXX-XX-XX"
               />
               <svg width="18" height="24" class="user-name-logo">
                 <use href="./images/icons.svg#user-phone"></use>
@@ -683,13 +694,14 @@
                 id="user-email"
                 name="user-email"
                 class="callback-name-input"
+                required
               />
               <svg width="18" height="24" class="user-name-logo">
                 <use href="./images/icons.svg#user-email"></use>
               </svg>
             </div>
           </div>
-          <div class="comment">
+          <div class="callback comment">
             <label for="user-comment" class="callback-name">Comment</label>
             <textarea
               name="user-comment"
@@ -716,7 +728,7 @@
               <a class="privacy-link" href="">Privacy Policy</a></label
             >
           </div>
-          <button class="send-btn">Send</button>
+          <button class="button hero-button">Send</button>
         </form>
       </div>
     </div>
